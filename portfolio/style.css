@@ -1,0 +1,338 @@
+/* fonts google */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* variable */
+:root {
+  --main-font: "poppins";
+  --main-color: #0f172a;
+  --secondary-color: #fdba74;
+}
+
+/* reset */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fdba74;
+  opacity: 0.9;
+}
+
+body {
+  background-color: var(--main-color);
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.navbar h2 a {
+  color: var(--main-color);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar ul li a {
+  color: var(--main-color);
+}
+
+.hero {
+  padding: 30px 0;
+  margin-top: 100px;
+}
+
+.hero p {
+  color: #dbdbdb;
+  font-weight: 100;
+}
+
+.hero .content {
+  width: 50%;
+}
+
+.hero .satu {
+  padding: 100px 40px;
+}
+
+.hero .satu h2 {
+  font-size: 40px;
+  line-height: 40px;
+  color: #dbdbdb;
+}
+
+.hero .satu h4 {
+  font-weight: 400;
+  color: white;
+  font-style: italic;
+}
+
+.hero .satu .social {
+  margin-top: 20px;
+}
+
+.hero .dua .bulat {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-color: #dbdbdb;
+  opacity: 0.3;
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  z-index: -100;
+}
+
+.about {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+}
+
+.container p {
+  color: #dbdbdb;
+  font-weight: 100;
+}
+
+.content_about {
+  padding: 70px 40px;
+  width: 60%;
+}
+
+.content_about p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.content_about button {
+  padding: 10px 20px;
+  border-radius: 7px;
+  background-color: #fdba74;
+  border: none;
+  outline: none;
+  color: #0f172a;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 15px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.content_deskripsi {
+  text-align: center;
+  width: 40%;
+}
+
+.content_deskripsi p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #dbdbdb;
+}
+
+.content_deskripsi .css {
+  padding-left: 20px;
+  position: relative;
+}
+
+.content_deskripsi .css::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  left: 50px;
+  border-radius: 50%;
+  background-color: #dbdbdb;
+  opacity: 0.2;
+}
+.content_deskripsi .css::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: -100px;
+  left: 50px;
+  border-radius: 50%;
+  background-color: #dbdbdb;
+  opacity: 0.7;
+}
+.content_deskripsi .css span,
+.container span {
+  color: #fdba74;
+  font-weight: 200;
+}
+
+.projects {
+  padding: 70px 40px;
+}
+
+.projects h3 {
+  color: #dbdbdb;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.projects .project_container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box_project {
+  width: 30%;
+  height: 200px;
+  background-color: #dbdbdb;
+  border-radius: 7px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.box_project img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.box_project:hover img {
+  transform: scale(1.2);
+}
+
+.form {
+  padding: 70px 40px;
+  display: flex;
+  justify-content: end;
+}
+
+.form label {
+  color: #fdba74;
+  font-weight: 200;
+}
+
+.form h3 {
+  color: #dbdbdb;
+  margin-bottom: 30px;
+}
+
+#contact p {
+  margin-top: 30px;
+}
+
+.form .emot {
+  width: 40%;
+  position: relative;
+  display: flex;
+}
+.form .emot p {
+  font-size: 2rem;
+}
+
+.form form {
+  width: 60%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form form input {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px var(--secondary-color) solid;
+  outline: none;
+}
+
+.form form textarea {
+  resize: none;
+  border-radius: 7px;
+  margin-top: 10px;
+  border: none;
+  padding: 7px;
+  font-size: 16px;
+  background-color: #dbdbdb;
+  width: 100%;
+  height: 180px;
+}
+
+.form form textarea:focus {
+  outline-color: #fdba74;
+}
+
+.form form button {
+  width: 50%;
+  padding: 10px 20px;
+  border-radius: 7px;
+  background-color: #fdba74;
+  border: none;
+  outline: none;
+  color: #0f172a;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 15px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.form form button:hover {
+  background-color: #fdba74;
+  color: #0f172a;
+}
+
+.emot .satu {
+  animation: emot 1s infinite alternate-reverse;
+}
+.emot .dua {
+  animation: emot 1.1s infinite alternate-reverse;
+}
+.emot .tiga {
+  animation: emot 1.2s infinite alternate-reverse;
+}
+.emot .empat {
+  animation: emot 1.3s infinite alternate-reverse;
+}
+.emot .lima {
+  animation: emot 1.4s infinite alternate-reverse;
+}
+
+/* keyframe */
+@keyframes emot {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
